@@ -1,5 +1,11 @@
 #include "Snake.h"
 
+float Snake::mPos(float X, float Y)
+{
+	mX = X;
+	mY = Y;
+}
+
 bool Snake::isAlive(int Life)
 { 
 	Health = Life;
@@ -30,16 +36,16 @@ bool Snake::isDead(int life)
 	return false;
 }
 
-Snake Snake::Length(int length)
+float Snake::Length(int length)
 {
 	Snake Cobra;
-	snakeLength = length;
-	return Cobra.Length;
+	snakeSize = length;
+	return length;
 }
 
 Snake Snake::Grow(int NewLength)
 {
 	Snake Cobra;
-	NewLength=snakeLength + 1;
+	NewLength=snakeSize + 1;
 	return Cobra.Grow;
 }

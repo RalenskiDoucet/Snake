@@ -110,6 +110,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Snake.h" />
+    <ClInclude Include="SnakeMovement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="SnakeMovement.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
